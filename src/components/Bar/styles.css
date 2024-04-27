@@ -1,0 +1,39 @@
+.container-bar {
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container-bar > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(90deg);
+}
+
+.link__bar {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: var(--font-header);
+  font-weight: 500;
+}
+
+.link__bar:hover {
+  text-decoration: underline;
+}
+
+#border {
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-primary);
+  display: flex;
+  align-self: center;
+  transform: rotate(180deg);
+}
