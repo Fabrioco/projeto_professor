@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 export const GlobalValues = createContext({});
 
@@ -9,33 +9,24 @@ export const ContextValues = ({ children }) => {
     setLoginOrRegister(!loginOrRegister);
   };
 
-  const [modal, setModal] = useState(false);
+  const [time, setTime] = useState();
+  const [hour, setHour] = useState("00:00");
 
-  const handleModal = () => {
-    setModal(!modal);
-  };
-
-  const [number, setNumber] = useState("");
-  const [btnClicked, setBtnClicked] = useState(false);
-
-  const handleGenerationRA = () => {
-    if (!btnClicked) {
-      const randomNumbers = Math.floor(Math.random() * 9000000) + 1000000;
-      setNumber(randomNumbers.toString());
-    }
-    setBtnClicked(true);
-  };
+  useEffect(() => {
+    setTime(new Date().toLocaleDateString("pt-BR"));
+    const interval = setInterval(() => {
+      setHour(new Date().toLocaleTimeString("pt-BR"));
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <GlobalValues.Provider
       value={{
         handleTransform,
         setLoginOrRegister,
-        loginOrRegister,
-        handleModal,
-        modal,
-        handleGenerationRA,
-        number,
+        time,
+        hour,
       }}
     >
       {children}

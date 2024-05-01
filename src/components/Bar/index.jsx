@@ -3,8 +3,11 @@ import React from "react";
 import "./styles.css";
 
 export const Bar = () => {
+
   return (
-    <div className="container-bar">
+    <div
+      className="container-bar"
+    >
       <div>
         <a
           className="link__bar"

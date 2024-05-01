@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "nome": "Anastácio Pereira Lima",
+    "email": "anasperali@outlook.com",
+    "password": "ana157@falcao"
+  },
+  {
+    "id": 2,
+    "nome": "Carlos Silva",
+    "email": "carlos.silva@example.com",
+    "password": "senha123"
+  },
+  {
+    "id": 3,
+    "nome": "Ana Souza",
+    "email": "ana.souza@example.com",
+    "password": "senha456"
+  },
+  {
+    "id": 4,
+    "nome": "José Oliveira",
+    "email": "jose.oliveira@example.com",
+    "password": "senha789"
+  },
+  {
+    "id": 5,
+    "nome": "Amanda Santos",
+    "email": "amanda.santos@example.com",
+    "password": "senhaabc"
+  },
+  {
+    "id": 6,
+    "nome": "Pedro Costa",
+    "email": "pedro.costa@example.com",
+    "password": "senhaxyz"
+  },
+  {
+    "id": 7,
+    "nome": "Marina Pereira",
+    "email": "marina.pereira@example.com",
+    "password": "senha456"
+  },
+  {
+    "id": 8,
+    "nome": "Lucas Martins",
+    "email": "lucas.martins@example.com",
+    "password": "senha789"
+  },
+  {
+    "id": 9,
+    "nome": "Fernanda Lima",
+    "email": "fernanda.lima@example.com",
+    "password": "senhaabc"
+  },
+  {
+    "id": 10,
+    "nome": "Rafael Gonçalves",
+    "email": "rafael.goncalves@example.com",
+    "password": "senhaxyz"
+  },
+  {
+    "id": 11,
+    "nome": "Juliana Almeida",
+    "email": "juliana.almeida@example.com",
+    "password": "senha123"
+  },
+  {
+    "id": 12,
+    "nome": "Roberto Santos",
+    "email": "roberto.santos@example.com",
+    "password": "senha456"
+  },
+  {
+    "id": 13,
+    "nome": "Isabela Oliveira",
+    "email": "isabela.oliveira@example.com",
+    "password": "senha789"
+  },
+  {
+    "id": 14,
+    "nome": "Diego Martins",
+    "email": "diego.martins@example.com",
+    "password": "senhaabc"
+  },
+  {
+    "id": 15,
+    "nome": "Camila Costa",
+    "email": "camila.costa@example.com",
+    "password": "senhaxyz"
+  },
+  {
+    "id": 16,
+    "nome": "Gustavo Pereira",
+    "email": "gustavo.pereira@example.com",
+    "password": "senha123"
+  },
+  {
+    "id": 17,
+    "nome": "Natália Almeida",
+    "email": "natalia.almeida@example.com",
+    "password": "senha456"
+  },
+  {
+    "id": 18,
+    "nome": "Eduardo Silva",
+    "email": "eduardo.silva@example.com",
+    "password": "senha789"
+  },
+  {
+    "id": 19,
+    "nome": "Beatriz Lima",
+    "email": "beatriz.lima@example.com",
+    "password": "senhaabc"
+  },
+  {
+    "id": 20,
+    "nome": "Luciana Gonçalves",
+    "email": "luciana.goncalves@example.com",
+    "password": "senhaxyz"
+  }
+]

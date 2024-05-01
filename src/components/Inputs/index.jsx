@@ -1,6 +1,13 @@
 import React from "react";
 
-export const Input = ({ label, placeholder, min }) => {
+export const Input = ({
+  label,
+  placeholder,
+  min,
+  pattern,
+  value,
+  onChange,
+}) => {
   return (
     <div>
       <label className="label-inpt">{label}</label>
@@ -10,7 +17,10 @@ export const Input = ({ label, placeholder, min }) => {
           type="text"
           placeholder={placeholder}
           min={min}
+          pattern={pattern}
           required
+          value={value}
+          onChange={onChange}
         />
       </div>
     </div>
