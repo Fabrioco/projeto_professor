@@ -1,8 +1,10 @@
 import React, { createContext, useEffect, useState } from "react";
 
+
 export const GlobalValues = createContext({});
 
 export const ContextValues = ({ children }) => {
+
   const [loginOrRegister, setLoginOrRegister] = useState(false);
 
   const handleTransform = () => {

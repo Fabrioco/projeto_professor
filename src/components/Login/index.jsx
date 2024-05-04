@@ -3,12 +3,17 @@ import "./styles.css";
 import square from "../../assets/images/square.png";
 import { useState } from "react";
 
+const emailPrincipal = "diretor@teste.com";
+const passwordPrincipal = "123123123";
+
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    
+    if (email === emailPrincipal && password === passwordPrincipal) {
+      alert('oi')
+    }
   };
 
   return (
