@@ -1,0 +1,129 @@
+.list_principal {
+  margin: 30px auto 0;
+  width: 1300px;
+  height: 810px;
+  background-color: var(--color-third);
+  border: 1px solid var(--color-secondary);
+  border-radius: 10px;
+}
+
+.list_principal > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.select_list {
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+
+.select_list > select {
+  width: 380px;
+  height: 50px;
+  background-color: var(--color-primary);
+  border-radius: 15px;
+  border: 1px solid var(--color-secondary);
+  text-align: center;
+  font-size: var(--font-size-titles);
+  font-weight: 600;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  max-height: 650px;
+  margin: auto;
+  border: 1px solid var(--color-secondary);
+  border-radius: 15px;
+  background-color: var(--color-primary);
+}
+
+.title_table {
+  width: 100%;
+  display: flex;
+}
+
+.title_table > p {
+  text-align: center;
+  font-size: var(--font-size-paragraph);
+  font-family: var(--font-header);
+  padding: 10px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--color-secondary);
+  background-color: #a1a1a1;
+}
+
+.title_table > p:first-child {
+  width: 15%;
+  border-top-left-radius: 15px;
+}
+
+.title_table > p:nth-child(2) {
+  width: 50%;
+  border-right: 1px solid var(--color-secondary);
+  border-left: 1px solid var(--color-secondary);
+}
+
+.title_table > p:nth-child(3) {
+  width: 35%;
+  border-top-right-radius: 15px;
+}
+
+.container_scroll {
+  overflow-y: auto;
+  height: 650px;
+}
+
+.container_scroll::-webkit-scrollbar {
+  width: 3px;
+}
+
+.container_scroll::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary);
+  border-radius: 4px;
+}
+
+.list_table {
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  border-bottom: 1px solid var(--color-secondary);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.list_table > p,
+.list_table > div {
+  text-align: center;
+  font-size: var(--font-size-paragraph);
+  font-family: var(--font-header);
+  padding: 10px;
+  font-weight: 500;
+}
+
+.list_table > p:first-child {
+  width: 15%;
+}
+
+.list_table > p:nth-child(2) {
+  width: 50%;
+  border-right: 1px solid var(--color-secondary);
+  border-left: 1px solid var(--color-secondary);
+}
+
+.list_table > div {
+  width: 35%;
+}
+
+.list_table > div > button {
+  width: 130px;
+  height: 30px;
+  font-size: var(--font-size-paragraph);
+  margin: 0 20px;
+}

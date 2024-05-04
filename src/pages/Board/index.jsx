@@ -1,11 +1,13 @@
 import React from "react";
 
+import { Header } from "../../components/Header";
+import { Principal } from "../subPages/Principal";
+
 export const Board = () => {
   return (
     <div>
-      <div>Ola </div>
-      <div>Bem vindo</div>
-      <div>diretor!</div>
+      <Header />
+      <Principal />
     </div>
   );
 };

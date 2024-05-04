@@ -7,6 +7,7 @@ export const Input = ({
   pattern,
   value,
   onChange,
+  type
 }) => {
   return (
     <div>
@@ -14,7 +15,7 @@ export const Input = ({
       <div className="inpts">
         <input
           className="inpt"
-          type="text"
+          type={type}
           placeholder={placeholder}
           min={min}
           pattern={pattern}
