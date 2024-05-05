@@ -1,5 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import { db } from "../firebase/firebaseConnection";
 
 export const GlobalValues = createContext({});
 
@@ -39,6 +40,26 @@ export const ContextValues = ({ children }) => {
     loadPage();
   }, [location]);
 
+  const addPerson = () => {};
+
+  useEffect(() => {
+    const loadDataTeacher = () => {
+      const collectionRef = db.collection("teacher_data");
+
+      collectionRef
+        .get()
+        .then((querySnapshot) => {
+          querySnapshot.forEach((doc) => {
+            console.log("Dados do documento:", doc.id, doc.data());
+          });
+        })
+        .catch((error) => {
+          console.error("erro ao obter coleção:", error);
+        });
+    };
+    loadDataTeacher();
+  }, []);
+
   return (
     <GlobalValues.Provider
       value={{
@@ -48,6 +69,7 @@ export const ContextValues = ({ children }) => {
         hour,
         nameCSS,
         namePerson,
+        
       }}
     >
       {children}

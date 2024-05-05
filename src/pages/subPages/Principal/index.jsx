@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import "./style.css";
 import { Button } from "../../../components/Button";
+import { GlobalValues } from "../../../context/ContextValues";
 
 export const Principal = () => {
+  const { loadDataTeacher } = useContext(GlobalValues);
+
+  const handleAddPerson = () => {
+  };
+
   return (
     <div className="list_principal">
       <div>
@@ -15,7 +21,7 @@ export const Principal = () => {
             <option value="1B">1°B</option>
             <option value="1C">1°C</option>
           </select>
-          <Button text="+ ADICIONAR" />
+          <Button text="+ ADICIONAR" onClickFunction={handleAddPerson} />
         </div>
         <div className="table">
           <div className="title_table">
